@@ -1,4 +1,4 @@
-## Steps
+# Steps
 1. Publish a message like this on the queue
 ```
 {
@@ -13,8 +13,8 @@
 2. Run the app and wait for it to complete
 3. Notice that the message was moved to the "skipped" queue
 
-## Logs
-# With UseRetry
+# Logs
+## With UseRetry
 ```
 [13:35:25 DBG] Starting bus: rabbitmq://localhost/
 [13:35:25 DBG] Connect: guest@localhost:5672/
@@ -59,7 +59,7 @@ System.ApplicationException: Some exception caused by an external service. Timeo
 end stop
 ```
 
-# With UseMessageRetry
+## With UseMessageRetry
 ```
 [15:03:21 DBG] Starting bus: rabbitmq://localhost/
 [15:03:21 DBG] Connect: guest@localhost:5672/
