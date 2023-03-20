@@ -27,7 +27,7 @@ namespace MassTransitRepro
                     h.Password("guest");
                 });
                 //with this retry it moves to skipped
-                x.UseRetry(r => {
+                x.UseMessageRetry(r => {
                     r.Immediate(5);
                     r.Handle(handleRetryException);
                 });
